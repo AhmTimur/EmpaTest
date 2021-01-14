@@ -1,0 +1,60 @@
+.images {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.customer {
+    padding: 10px;
+}
+.customerImageName {
+    text-align: center;
+    max-width: 100px;
+}
+.active {
+    color: green;
+}
+.notActive {
+    color: #999
+}
+.activeStatus p {
+    padding-left: 10px;
+}
+.customerInfo {
+    padding-top: 5px;
+}
+.superUser {
+    background-color: lightgreen;
+    color: #37702a;
+    margin-top: 10px;
+    padding: 0 7px;
+    border-radius: 10px;
+    max-width: 90px;
+}
+.usersFilterForm {
+    padding: 10px;
+}
+.usersFilterFormColumn {
+    margin: auto;
+    max-width: 540px;
+}
+.usersFilterFormLabel {
+    margin-top: 10px;
+}
+.usersFilterGroup {
+    display: flex;
+}
+.filtersLabel {
+    width: auto;
+    margin-top: 5px;
+}
+/* input without arrows*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
