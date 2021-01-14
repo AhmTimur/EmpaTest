@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/emphasoft.iml" filepath="$PROJECT_DIR$/.idea/emphasoft.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/EmpaTest.iml" filepath="$PROJECT_DIR$/.idea/EmpaTest.iml" />
     </modules>
   </component>
 </project>
