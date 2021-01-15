@@ -1,4 +1,4 @@
-import {instance} from "./api";
+import {instance} from './api'
 
 
 export const usersAPI = {
@@ -7,7 +7,7 @@ export const usersAPI = {
         return instance({
             method: 'get',
             url: 'api/v1/users/',
-            headers: {Authorization: `Token ${getToken}`, accept: "application/json"}
+            headers: {Authorization: `Token ${getToken}`, accept: 'application/json'}
         }).then(res => res.data).catch(error => console.log(error))
-        }
+    }
 }

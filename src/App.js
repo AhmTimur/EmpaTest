@@ -1,32 +1,20 @@
 import './App.css'
 import React from 'react'
-import {BrowserRouter, Redirect, Route, Switch} from 'react-router-dom'
-import {Provider} from "react-redux"
-import store from "./redux/redux-store"
-import Users from "./components/Users/Users"
-import LoginPage from "./components/LoginPage/LoginPage"
+import {Provider} from 'react-redux'
+import store from './redux/redux-store'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import {history} from './history'
+import MainRouter from './components/MainRouter/MainRouter'
+import {Router} from 'react-router'
 
-function App() {
- return (
-     <Switch>
-         <Route exact path='/' render={()=> <Redirect to={'/login'}/> }/>
-         <Route path='/login' render={()=> <LoginPage/> }/>
-         <Route path='/users' render={()=> <Users/>}/>
-         <Route path="*" render={() => <div>404 PAGE IS NOT FOUND</div>}/>
-     </Switch>
-
-     )
-}
-
-const AppContainerWrap = () => {
+const App = () => {
     return (
-        <BrowserRouter>
-            <Provider store={store}>
-                <App />
-            </Provider>
-        </BrowserRouter>
+        <Provider store={store}>
+            <Router history={history}>
+                <MainRouter/>
+            </Router>
+        </Provider>
     )
 }
 
-export default AppContainerWrap;
+export default App
